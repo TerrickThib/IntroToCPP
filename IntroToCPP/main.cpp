@@ -1,15 +1,11 @@
 #include <iostream>
 #include <cstring>
-#include "Entity.h"
+#include "Engine.h"
 
 int main()
-{
-	Entity wompus = Entity('W', 1000000000, 5, -20);
+{	
+	Engine engine = Engine();
+	engine.run();
 
-	//Waits for player input
-	system("pause");
-
-	//Clears players screen
-	system("cls");
 	return 0;
 }

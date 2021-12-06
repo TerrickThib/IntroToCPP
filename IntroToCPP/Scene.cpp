@@ -4,12 +4,14 @@
 
 Scene::Scene()
 {
-
+	sceneCurrentIndex = 0;
+	m_started = true;
+	m_actorCount = 3;
 }
 
 Scene::~Scene()
 {
-
+	
 }
 
 bool Scene::getStarted()
@@ -19,12 +21,13 @@ bool Scene::getStarted()
 
 void Scene::addActor(Actor* actor)
 {
-
+	m_actors.addActor(actor);	
 }
 
 bool Scene::removeActor(Actor* actor)
 {
-	return false;
+	m_actors.removeActor(actor);
+	
 }
 
 void Scene::start()
@@ -49,8 +52,13 @@ void Scene::start()
 
 void Scene::update()
 {
-	SimulationManager* scene = new SimulationManager();
-	scene->update();
+	for (int i = 0; i < m_actors.getLength(); i++)
+	{
+		if (m_actors.getActor(i)->getStarted())
+			m_actors.getActor(i)->start();
+
+		m_actors.getActor(i)->update();
+	}
 }
 
 void Scene::draw()

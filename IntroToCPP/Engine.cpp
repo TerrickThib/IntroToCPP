@@ -27,6 +27,19 @@ void Engine::run()
 	end();
 }
 
+void Engine::addScene(Scene* scene)
+{
+}
+
+Scene* Engine::getCurrentScene()
+{
+	return nullptr;
+}
+
+void Engine::setCurrentScene(int index)
+{
+}
+
 void Engine::start()
 {
 	

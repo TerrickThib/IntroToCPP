@@ -28,4 +28,5 @@ public:
 
 	int m_currentFighterIndex;
 	int m_entityCount;
+	int m_currentSceneIndex;
 };

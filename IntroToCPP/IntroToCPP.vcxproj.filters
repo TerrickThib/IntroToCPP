@@ -42,6 +42,9 @@
     <ClCompile Include="Actor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ActorArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="SimulationManager.h">
       <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorArray.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

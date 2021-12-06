@@ -11,7 +11,7 @@ public:
 
 	Actor* getActor(int index);
 
-	int getLength();
+	int getLength() { return m_actorCount; }
 
 	bool contains(Actor* actor);
 private:
